@@ -1,0 +1,13 @@
+entity Program {
+	nazwa String,
+	opis String
+}
+entity Temat {
+	nazwa String
+}
+relationship OneToMany {
+	Program{temat} to Temat,
+}
+paginate Program with infinite-scroll
+paginate Temat with pagination
+service all with serviceImpl except Program, Temat
