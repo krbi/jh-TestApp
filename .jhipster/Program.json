@@ -1,0 +1,31 @@
+{
+    "name": "Program",
+    "fields": [
+        {
+            "fieldName": "nazwa",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "opis",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "temat",
+            "otherEntityRelationshipName": "program",
+            "relationshipName": "temat"
+        }
+    ],
+    "changelogDate": "20191122085521",
+    "entityTableName": "program",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
