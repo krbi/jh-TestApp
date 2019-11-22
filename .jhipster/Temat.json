@@ -1,0 +1,28 @@
+{
+    "name": "Temat",
+    "fields": [
+        {
+            "fieldName": "nazwa",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "program",
+            "otherEntityRelationshipName": "temat",
+            "relationshipName": "program",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191122085522",
+    "entityTableName": "temat",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
